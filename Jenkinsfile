@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        sh 'docker build -f flask-development/Dockerfile .'
+      }
+    }
+
   }
 }
