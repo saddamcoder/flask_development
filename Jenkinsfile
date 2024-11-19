@@ -9,7 +9,9 @@ pipeline {
 
     stage('list files') {
       steps {
-        sh 'ls -la'
+        sh '''ls -la
+docker --version
+'''
       }
     }
 
