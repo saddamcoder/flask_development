@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.source = "https://github.com/saddamcoder/flask_de
 ADD . /python-flask
 WORKDIR /python-flask
 
-ENV FLASK_APP=docker_test_jenkins/myapp.py
+ENV FLASK_APP=project1/myapp.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 COPY requirements.txt requirements.txt

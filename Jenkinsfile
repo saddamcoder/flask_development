@@ -17,7 +17,7 @@ docker --version
 
     stage('Build') {
       steps {
-        sh 'docker build -f flask-development/Dockerfile .'
+        sh 'docker build -f Dockerfile .'
       }
     }
 
