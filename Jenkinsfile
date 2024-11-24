@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout Code') {
       steps {
-        git(url: 'https://github.com/saddamcoder/flask_development.git', branch: 'dev')
+        git(url: 'https://github.com/saddamcoder/flask_development.git', branch: 'dev', credentialsId: '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')
       }
     }
 
