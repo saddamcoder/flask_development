@@ -3,13 +3,12 @@ pipeline {
   stages {
     stage('Checkout Code') {
       steps {
-        git(url: 'https://github.com/saddamcoder/flask_development.git', branch: 'dev', credentialsId: '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')
+        git(url: 'https://github.com/saddamcoder/flask_development.git', branch: 'dev')
       }
     }
 
     stage('list files') {
       steps {
-        sh '''ls -la'''
         sh '''docker --version'''
       }
     }
